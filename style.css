@@ -485,6 +485,7 @@ nav li:first-child{
         font-size: 0.5rem;
         width: 80px;
         padding: 5px;
+        white-space: nowrap;
     }
     .title button:hover{
         width: 100px;
@@ -573,6 +574,7 @@ nav li:first-child{
         font-size: 0.4rem;
         width: 80px;
         padding: 5px;
+        white-space: nowrap;
     }
     .title button:hover{
         width: 100px;
@@ -653,6 +655,7 @@ nav li:first-child{
         font-size: 0.4rem;
         width: 60px;
         padding: 5px;
+        white-space: nowrap;
     }
     .title button:hover{
         width: 100px;
