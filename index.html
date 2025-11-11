@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Lance Ducante</title>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!--Google icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close" />
+
+    <!--Style-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Navigation -->
+        <nav>
+            <ul class="hamburger">
+                <li onclick="closeHamburger()"><a style="color: white; text-decoration: none;"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 0 24 24" width="26" style="fill: white;"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg></a></li>
+                <li onclick="closeHamburger()"><a href="#home">Home</a></li>
+                <li onclick="closeHamburger()"><a href="#about">About</a></li>
+                <li onclick="closeHamburger()"><a href="#skills">Skills</a></li>
+                <li onclick="closeHamburger()"><a href="#services">Services</a></li>
+                <li onclick="closeHamburger()"><a href="#contacts">Contacts</a></li>
+            </ul>
+
+            <ul>
+                <li><a href="">Portfolio</a></li>
+                <li class="hideOnMobile"><a href="#home">Home</a></li>
+                <li class="hideOnMobile"><a href="#about">About</a></li>
+                <li class="hideOnMobile"><a href="#skills">Skills</a></li>
+                <li class="hideOnMobile"><a href="#services">Services</a></li>
+                <li class="hideOnMobile"><a href="#contacts">Contacts</a></li>
+                <li class="hamburger-btn" onclick="openHamburger()"><a style="fill: white;"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 0 24 24" width="26"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg></a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="title">
+            <h2>Hello, It's Me!</h2>
+            <h1>Megumi Fushiguro</h1>
+            <h2>I'm a <span class="highlight">Full Stack Developer</span> </h2>
+            <p>A passionate MERN Stack Developer specializing in building dynamic, responsive, and scalable web applications.</p>
+            <button>Download CV ></button>
+        </div>
+
+        <div class="pfp-container">
+            <img src="/images/megumi.jpg" alt="image/jpg">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h1>About Me</h1>
+        <p>I'm specialize in building full-stack solutions using MongoDB, Express, React, and Node.js, turning innovative ideas into seamless digital products. With a strong focus on clean code, performance, and modern design, I enjoy developing everything from interactive front-end interfaces to powerful back-end systems. My goal is to craft web solutions that not only function efficiently but also leave a lasting impression through intuitive design and smooth user interaction.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="skills-text">
+            <h1>Programming Languages & Skills</h1>
+        </div>
+
+        <div class="languages">
+            <img src="/images/html.png" alt="image/png">
+            <img src="/images/css-3.png" alt="image/png">
+            <img src="/images/java-script.png" alt="image/png">
+            <img src="/images/java.png" alt="image/png">
+            <img src="/images/mongo.png" alt="image/png">
+            <img src="/images/ex.png" alt="image/png">
+            <img src="/images/react.png" alt="image/png">
+            <img src="/images/nodejs.png" alt="image/png">
+            <img src="/images/github.png" alt="image/png">
+            <img src="/images/davinci.png" alt="image/png">
+            <img src="/images/capcut.png" alt="image/png">
+            <img src="/images/figma.png" alt="image/png">
+            <img src="/images/vscode.png" alt="image/png">
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="services-text">
+            <h2>Services</h2>
+        </div>
+
+        <div class="card-container">
+            <div class="card">
+                <h1>Portfolio Website</h1>
+                <p>Modern, responsive, and visually captivating portfolio websites designed to showcase your personal brand or professional work in the best light. Each portfolio I build focuses on clean UI/UX, fast performance, and mobile-friendly design to ensure your visitors have a seamless experience on any device.</p>
+            </div>
+            <div class="card">
+                <h1>E-commerce Website</h1>
+                <p>High-performing, user-friendly e-commerce websites that deliver smooth shopping experiences and drive conversions. My focus is on creating responsive, modern, and secure online stores with intuitive navigation, attractive product layouts, and seamless checkout flows.</p>
+            </div>
+            <div class="card">
+                <h1>Landing Page</h1>
+                <p>Designing and developing high-converting landing pages that capture attention and inspire action. Each page is built with a strong focus on modern UI/UX design, responsive layouts, and fast loading performance to ensure visitors stay engaged from the first second.</p>
+            </div>
+            <div class="card">
+                <h1>Business / Company Website</h1>
+                <p>Professional and responsive business websites that establish credibility and help companies connect with their customers online. Each site is built with a focus on clean design, intuitive navigation, and performance optimization, ensuring your brand stands out and delivers a seamless user experience.</p>
+            </div>
+            <div class="card">
+                <h1>Personal Website</h1>
+                <p>Personal websites that reflect your unique identity, goals, and story through modern design and clean functionality. Each site is crafted to highlight your background, interests, and achievements while providing a space for others to easily connect with you.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts Section -->
+    <section class="contacts" id="contacts">
+        <div class="contacts-text">
+            <h1>Contacts</h1>
+        </div>
+
+        <div class="contacts-container">
+            <a href="#"><img src="/images/facebook.png" alt="image/png"></a>
+            <a href="#"><img src="/images/instagram.png" alt="image/png"></a>
+            <a href="#"><img src="/images/tiktok.png" alt="image/png"></a>
+            <a href="#"><img src="/images/github.png" alt="image/png"></a>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <h1>Portfolio Website</h1>
+        <p>&copy; 2025 Copyright. All rights reserved.</p>
+        <h1>Developed by: Lance</h1>
+    </footer>
+    <!--Script-->
+    <script src="script.js"></script>
+</body>
+</html>

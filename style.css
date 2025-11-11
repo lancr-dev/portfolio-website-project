@@ -1,0 +1,724 @@
+/* Global Default */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+}
+body{
+    min-height: 100vh;
+    background-color: #1f242d;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+header{
+    height: 90px;
+}
+nav{
+    
+    background-color: rgb(20, 20, 31);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 150px;
+    z-index: 9999;
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 70px;
+}
+nav a{
+    height: 100%;
+    padding: 0 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: transform 0.5s ease, color 0.5s;
+}
+nav a:hover{
+    transform: scale(1.2);
+    color: aquamarine;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.hamburger{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 250px;
+    z-index: 9999;
+    background-color: rgba(20, 20, 31, 0.151);
+    backdrop-filter: blur(10px);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.hamburger li{
+    width: 100%;
+}
+.hamburger a{
+    width: 100%;
+}
+
+.hamburger-btn{
+    display: none;
+}
+
+/* Home Section */
+.home{
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f242d;
+    padding: 0 200px;
+
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.title h1{
+    font-size: 4.5rem;
+    color: white;
+}
+.title h2{
+    font-size: 2rem;
+    color: white;
+}
+.highlight{
+    color: aquamarine;
+}
+.title p{
+    padding-top: 10px;
+    margin-right: 200px;
+    color: white;
+}
+.title button{
+    width: 150px;
+    cursor: pointer;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+    background-color: aquamarine;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.5s, width 0.5s ease, box-shadow 0.5s ease;
+}
+.title button:hover{
+    background-color: rgb(134, 245, 208);
+    width: 200px;
+    box-shadow: 1px 1px 5px 3px rgb(127, 255, 212);
+}
+.pfp-container img{
+    width: 400px;
+    border-radius: 10px;
+    transition: transform 0.5s ease, box-shadow 0.3s;
+}
+.pfp-container img:hover{
+    transform: scale(1.2);
+    box-shadow: 1px 1px 10px 4px rgb(127, 255, 212);
+}
+/* About Section */
+.about{
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.about h1{
+    color: aquamarine;
+    font-size: 2.5rem;
+}
+.about p{
+    color: white;
+    margin: 0px 180px 0px 180px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* Skills Section */
+.skills{
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+    margin: 0px 50px 0px 50px;
+}
+.skills-text h1{
+    color:aquamarine;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.languages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+.languages img{
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.5s ease, box-shadow 0.3s;
+}
+.languages img:hover{
+    transform: scale(1.2);
+    box-shadow: 1px 1px 10px 2px rgb(127, 255, 212);
+}
+
+/* Services */
+.services{
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: #1f242d;
+    padding: 0 5px 0 5px;
+}
+.services-text h2{
+    font-size: 2.3rem;
+    color:aquamarine;
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    flex-wrap: wrap;
+}
+.card{
+    width: 300px;
+    height: 280px;
+    background: linear-gradient(45deg, rgb(255, 255, 255), aquamarine);
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s;
+}
+.card:hover{
+    transform: scale(1.2);
+    box-shadow: 1px 1px 10px 2px rgb(127, 255, 212);
+}
+.card h1{
+    font-size: 1.3rem;
+}
+.card p{
+    margin-top: 10px;
+    font-size: 0.8rem;
+}
+
+/* Contacts Section */
+.contacts{
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+}
+.contacts-text{
+    color: aquamarine;
+    font-size: 1.5rem;
+}
+.contacts-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+.contacts-container img{
+    width: 120px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.5s ease, box-shadow 0.3s;
+}
+.contacts img:hover{
+    transform: scale(1.2);
+    box-shadow: 1px 1px 10px 2px rgb(127, 255, 212);
+}
+
+/* Footer Section */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(20, 20, 31);
+    color: white;
+    padding: 15px;
+}
+.footer h1{
+    font-size: 1rem;
+}
+
+/* Media Queries */
+@media(max-width: 1400px){
+    .home{
+        padding: 0 150px;
+    }
+    .title h1{
+        font-size: 4rem;
+    }
+    .title h2{
+        font-size: 1.5rem;
+    }
+    .title p{
+        font-size: 1rem;
+        margin-right: 135px;
+    }
+    .title button{
+        font-size: 1rem;
+        width: 150px;
+    }
+    .title button:hover{
+        width: 175px;
+    }
+    .pfp-container img{
+        width: 300px;
+    }
+    .services{
+        margin-top: 200px;
+    }
+}
+
+@media(max-width: 1200px){
+    .hideOnMobile{
+        display: none;
+    }
+    .hamburger-btn{
+        display: block;
+    }
+    .home{
+        padding: 0 125px;
+    }
+    .title h1{
+        font-size: 3.5rem;
+    }
+    .title h2{
+        font-size: 1.5rem;
+    }
+    .title p{
+        font-size: 1rem;
+        margin-right: 135px;
+    }
+    .title button{
+        font-size: 0.9rem;
+        width: 125px;
+    }
+    .title button:hover{
+        width: 150px;
+    }
+    .pfp-container img{
+        width: 300px;
+    }
+    .about h1{
+        font-size: 2.4rem
+    }
+    .about p{
+        margin: 0px 150px 0px 150px;
+    }
+    .services{
+        margin-top: 300px;
+    }
+    .services h2{
+        font-size: 2.2rem;
+    }
+    .card{
+        width: 350px;
+        height: 330px;
+    }
+    .card-container{
+        gap: 50px;
+    }
+    .card h1{
+        font-size: 1rem;
+    }
+    .card p{
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 1075px){
+    .home{
+        height: 700px;
+        padding: 0 80px;
+    }
+    .about{
+        height: 700px;
+    }
+    .skills{
+        height: 700px;
+    }
+    .title h1{
+        font-size: 2.7rem;
+    }
+    .title h2{
+        font-size: 1rem;
+    }
+    .title p{
+        font-size: 0.8rem;
+        margin-right: 100px;
+    }
+    .title button{
+        font-size: 0.8rem;
+        width: 110px;
+    }
+    .title button:hover{
+        width: 130px;
+    }
+    .pfp-container img{
+        width: 225px;
+    }
+    .about h1{
+        font-size: 2.2rem;
+    }
+    .about p{
+        font-size: 0.9rem;
+        margin: 0px 100px 0px 100px;
+    }
+    .skills h1{   
+        font-size: 2rem;
+    }
+    .languages img{
+        width: 100px;
+        height: 100px;
+    }
+    .services{
+        margin-top: 500px;
+        margin-bottom: 300px;
+    }
+    .services h2{
+        font-size: 2.2rem;
+    }
+    .card{
+        width: 350px;
+        height: 330px;
+    }
+    .card-container{
+        gap: 50px;
+    }
+    .card h1{
+        font-size: 1.3rem;
+    }
+    .card p{
+        font-size: 1rem;
+    }
+    .contacts{
+        height: 700px;
+        margin: 0px 20px 0px 20px;
+    }
+    .contacts-text{
+        font-size: 1.2rem
+    }
+    .contacts-container{
+        gap: 80px;
+    }
+    .contacts-container img{
+        width: 100px;
+    }
+    .footer h1{
+        font-size: 0.7rem;
+    }
+    footer p{
+        font-size: 0.7rem;
+    }
+}
+
+@media(max-width: 768px){
+    nav{
+        padding: 10px 0px;
+    }
+    .home{
+        height: 600px;
+        padding: 0 50px;
+    }
+    .about{
+        height: 600px;
+    }
+    .contacts{
+        height: 600px;
+    }
+    .skills{
+        height: 600px;
+    }
+    .title h1{
+        font-size: 2rem;
+    }
+    .title h2{
+        font-size: 1rem;
+    }
+    .title p{
+        font-size: 0.6rem;
+        margin-right: 100px;
+    }
+    .title button{
+        font-size: 0.5rem;
+        width: 80px;
+        padding: 5px;
+    }
+    .title button:hover{
+        width: 100px;
+    }
+    .pfp-container img{
+        width: 180px;
+    }
+    .about h1{
+        font-size: 2rem;
+    }
+    .about p{
+        font-size: 0.8rem;
+        margin: 0px 80px 0px 80px;
+    }
+    .skills h1{   
+        font-size: 1.8rem;
+    }
+    .languages{
+        gap: 50px;
+    }
+    .languages img{
+        width: 80px;
+        height: 80px;
+    }
+    .services{
+        margin-top: 800px;
+        margin-bottom: 800px;
+    }
+    .card-container{
+        gap: 80px;
+    }
+    .card h1{
+        font-size: 1.5rem;
+    }
+    .contacts-text{
+        font-size: 1rem
+    }
+    .contacts-container{
+        gap: 80px;
+    }
+    .contacts-container img{
+        width: 90px;
+    }
+    .footer h1{
+        font-size: 0.5rem;
+    }
+    footer p{
+        font-size: 0.5rem;
+    }
+}
+
+@media(max-width: 600px){
+    nav{
+        padding: 10px 0px;
+    }
+}
+
+@media(max-width: 400px){
+    .hamburger{
+        width: 100%;
+    }
+}
+
+@media(max-width: 576px){
+    .home{
+        height: 500px;
+        padding: 0 50px;
+    }
+    .about{
+        height: 500px;
+    }
+    .contacts{
+        height: 500px;
+    }
+    .title h1{
+        font-size: 1.5rem;
+    }
+    .title h2{
+        font-size: 0.8rem;
+    }
+    .title p{
+        font-size: 0.5rem;
+        margin-right: 50px;
+    }
+    .title button{
+        font-size: 0.4rem;
+        width: 80px;
+        padding: 5px;
+    }
+    .title button:hover{
+        width: 100px;
+    }
+    .pfp-container img{
+        width: 150px;
+    }
+    .skills{
+        height: 500px;
+        gap: 80px;
+    }
+    .languages{
+        gap: 50px;
+    }
+    .skills h1{   
+        font-size: 1.5rem;
+    }
+    .languages img{
+        width: 50px;
+        height: 50px;
+    }
+    .services{
+        margin-top: 700px;
+    }
+    .services h2{
+        font-size: 1.5rem;
+    }
+    .card{
+        width: 350px;
+        height: 330px;
+    }
+    .card-container{
+        gap: 50px;
+    }
+    .card h1{
+        font-size: 1.5rem;
+    }
+    .card p{
+        font-size: 1rem;
+    }
+    .contacts-text{
+        font-size: 1rem
+    }
+    .contacts-container{
+        gap: 40px;
+    }
+    .contacts-container img{
+        width: 60px;
+    }
+    .footer h1{
+        font-size: 0.4rem;
+    }
+    footer p{
+        font-size: 0.4rem;
+    }
+}
+
+@media(max-width: 480px){
+    .home{
+        height: 500px;
+        padding: 0 25px;
+        margin-top: -60px;
+    }
+    .about{
+        height: 500px;
+    }
+    .title h1{
+        font-size: 1rem;
+    }
+    .title h2{
+        font-size: 0.6rem;
+    }
+    .title p{
+        font-size: 0.4rem;
+        margin-right: 50px;
+    }
+    .title button{
+        font-size: 0.4rem;
+        width: 60px;
+        padding: 5px;
+    }
+    .title button:hover{
+        width: 100px;
+    }
+    .pfp-container img{
+        width: 135px;
+    }
+    .about h1{
+        font-size: 1.5rem;
+    }
+    .about p{
+        font-size: 0.7rem;
+        margin: 0px 60px 0px 60px;
+    }
+    .skills{
+        height: 500px;
+        gap: 50px;
+    }
+    .languages{
+        gap: 30px;
+    }
+    .skills h1{   
+        font-size: 1.2rem;
+    }
+    .languages img{
+        width: 60px;
+        height: 60px;
+    }
+    .services{
+        margin-top: 450px;
+        margin-bottom: 300px;
+    }
+    .services-text h2{
+        font-size: 1.3rem;
+    }
+    .card-container{
+        gap: 15px;
+    }
+    .card{
+        width: 270px;
+        height: 240px;
+    }
+    .card h1{
+        font-size: 1rem;
+    }
+    .card p{
+        font-size: 0.7rem;
+    }
+    .contacts{
+        height: 500px;
+        gap: 50px;
+    }
+    .contacts-text{
+        font-size: 0.8rem
+    }
+    .contacts-container{
+        gap: 20px;
+    }
+    .contacts-container img{
+        width: 50px;
+    }
+    .footer h1{
+        font-size: 0.3rem;
+    }
+    footer p{
+        font-size: 0.3rem;
+    }
+
+}
