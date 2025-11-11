@@ -447,10 +447,10 @@ nav li:first-child{
         width: 100px;
     }
     .footer h1{
-        font-size: 0.7rem;
+        font-size: 1rem;
     }
     footer p{
-        font-size: 0.7rem;
+        font-size: 1rem;
     }
 }
 
@@ -530,10 +530,10 @@ nav li:first-child{
         width: 90px;
     }
     .footer h1{
-        font-size: 0.5rem;
+        font-size: 0.8rem;
     }
     footer p{
-        font-size: 0.5rem;
+        font-size: 0.8rem;
     }
 }
 
@@ -625,10 +625,10 @@ nav li:first-child{
         width: 60px;
     }
     .footer h1{
-        font-size: 0.4rem;
+        font-size: 0.6rem;
     }
     footer p{
-        font-size: 0.4rem;
+        font-size: 0.6rem;
     }
 }
 
@@ -640,6 +640,8 @@ nav li:first-child{
     }
     .about{
         height: 500px;
+        margin-top: 50px;
+        margin-bottom: 100px;
     }
     .title h1{
         font-size: 1rem;
@@ -653,7 +655,7 @@ nav li:first-child{
     }
     .title button{
         font-size: 0.4rem;
-        width: 80px;
+        width: 65px;
         padding: 5px;
         white-space: nowrap;
     }
@@ -718,10 +720,10 @@ nav li:first-child{
         width: 50px;
     }
     .footer h1{
-        font-size: 0.3rem;
+        font-size: 0.7rem;
     }
     footer p{
-        font-size: 0.3rem;
+        font-size: 0.7rem;
     }
 
 }
