@@ -651,7 +651,7 @@ nav li:first-child{
     }
     .title button{
         font-size: 0.4rem;
-        width: 70px;
+        width: 60px;
         padding: 5px;
     }
     .title button:hover{
