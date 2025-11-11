@@ -276,6 +276,8 @@ nav li:first-child{
     background-color: rgb(20, 20, 31);
     color: white;
     padding: 15px;
+    flex-wrap: wrap; 
+    overflow-x: hidden; 
 }
 .footer h1{
     font-size: 1rem;
@@ -634,14 +636,13 @@ nav li:first-child{
 
 @media(max-width: 480px){
     .home{
-        height: 500px;
+        height: 300px;
         padding: 0 25px;
-        margin-top: -60px;
+        
     }
     .about{
         height: 500px;
-        margin-top: 50px;
-        margin-bottom: 100px;
+        margin-bottom: 30px;
     }
     .title h1{
         font-size: 1rem;
